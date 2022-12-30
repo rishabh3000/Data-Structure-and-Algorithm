@@ -1,0 +1,22 @@
+def majorityElement(nums):
+    elememtOne=0
+    elementCount=0
+    for i range(len(nums)):
+        if(elementCount==0):
+            elememtOne=nums[i]
+            elementCount+=1
+        elif(elememtOne==nums[i]):
+            elementCount+=1
+        else:
+            elementCount--1
+       
+    count=0
+    
+    for i in nums:
+        
+        if i==elementOne:
+            count+=1
+    if count>len(nums)/2:
+            return elementOne
+        
+      
