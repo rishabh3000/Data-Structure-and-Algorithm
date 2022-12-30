@@ -1,4 +1,4 @@
-# TwoSum for SortedArray
+# TwoSum for SortedArray using Pointer
 
 def twoSum(nums,target):
   l.r=0,len(nums)-1
