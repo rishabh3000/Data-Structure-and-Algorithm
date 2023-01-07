@@ -1,0 +1,11 @@
+# Brut Force Solution
+
+def searchMatrix(matrix, target):
+        return any(target in row for row in matrix)
+        
+        
+def searchMatrix (matrix,target):
+        for n in matrix:
+            if n[-1]>=target:
+                return target in n
+        return False
