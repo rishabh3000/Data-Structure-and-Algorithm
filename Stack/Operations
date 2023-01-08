@@ -1,0 +1,32 @@
+class Stack:
+    def _init_(self):
+        self.items = []
+ 
+    def is_empty(self):
+        return self.items == []
+ 
+    def push(self, data):
+        self.items.append(data)
+ 
+    def pop(self):
+        if(self.is_empty()):
+            return "Stack is empty"
+        return self.items.pop()
+ 
+ 
+s = Stack()
+while True:
+
+    print(" 1 : push\n 2 : pop\n 3 : peak\n 4 : size\n 5: Quit")
+ 
+    userInput = int(input("Enter what operation you want to do : "))
+    if(userInput == 1):
+        data = int(input("Enter you data : "))
+        s.push(data)
+        print(s.items)
+
+    elif(userInput == 2):
+        print(s.pop())
+
+    elif(userInput == 3):
+        print(s.items[0])
