@@ -1,0 +1,14 @@
+Input nums=[0,2,1,5,3,4]
+output    =[0,1,2,4,5,3]
+
+def buildArray(nums):
+    arr=[]
+    i=0
+    a=len(nums)-1
+    
+    while (a>=0):
+        arr.append(nums[nums[i]])
+        i+=1
+        a-=1
+        
+    return arr
