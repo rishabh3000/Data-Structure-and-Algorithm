@@ -24,3 +24,10 @@ def frequency(arr):
 arr = [1, 3, 1, 3, 4, 1]
 
 print(frequency(arr))
+
+
+
+
+ def topKFrequent(self, nums: List[int], k: int) -> List[int]:
+        n=Counter(nums)
+        return sorted(n,key=n.get,reverse=True)[:k]
