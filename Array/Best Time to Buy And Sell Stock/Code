@@ -24,3 +24,13 @@ def maxProfit(prices):
                 max = prices[i] - min
         
         return max
+        
+        
+        
+def maxProfit(prices):
+        buy,sell,maxx=prices[0],0,0
+        for cur in prices:
+            buy=min(buy,cur)
+            sell=cur-buy
+            maxx=max(sell,maxx)
+        return maxx        
