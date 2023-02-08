@@ -1,0 +1,16 @@
+#length of a list
+
+def length(l):
+  if l =[]:
+    return(0)
+  else:
+    return(1+length(l[1:]))
+
+
+#  sum of a list of numbers
+
+def sumlist(l):
+  if l ==[]:
+    return(0)
+  else:
+    return(l[0]+sumlist(l[1:]))
