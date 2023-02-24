@@ -1,0 +1,14 @@
+# Write a Python program to create a lambda function that adds 15 to a given number passed in as an argument, also create a lambda function that multiplies argument x with argument y and print the result.
+
+add=int(input())
+mult1=int(input())
+mult2=int(input())
+
+add_fifteen = lambda x: x + 15
+multiply = lambda x, y: x * y
+
+add_result = add_fifteen(add)
+print("After addition:", add_result)
+
+mult_result = multiply(mult1, mult2)
+print("After multiplication:", mult_result)
