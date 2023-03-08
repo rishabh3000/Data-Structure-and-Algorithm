@@ -8,7 +8,7 @@ def majorityElement(nums):
         elif(elememtOne==nums[i]):
             elementCount+=1
         else:
-            elementCount--1
+            elementCount-=1
        
     count=0
     
