@@ -1,7 +1,7 @@
 def majorityElement(nums):
     elememtOne=0
     elementCount=0
-    for i range(len(nums)):
+    for i in range(len(nums)):
         if(elementCount==0):
             elememtOne=nums[i]
             elementCount+=1
